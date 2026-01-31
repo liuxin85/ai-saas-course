@@ -20,7 +20,7 @@ export default function Navbar() {
   }
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-white border-b border-gray-200 shadow-sm mb-16">
+    <header className="fixed top-0 w-full z-50 bg-white border-b border-gray-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* 1. Logo 区域 */}
@@ -30,22 +30,6 @@ export default function Navbar() {
           >
             <h1>Personalized AI Newsletter</h1>
           </div>
-
-          {/* 2. 中间导航链接 (可选) */}
-          <nav className="hidden md:flex space-x-8">
-            <Link
-              href="/dashboard"
-              className="text-gray-600 hover:text-blue-600 transition"
-            >
-              仪表盘
-            </Link>
-            <Link
-              href="/projects"
-              className="text-gray-600 hover:text-blue-600 transition"
-            >
-              项目
-            </Link>
-          </nav>
 
           {/* 3. 用户操作区 */}
           <div className="flex items-center space-x-4">

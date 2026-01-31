@@ -14,6 +14,7 @@
     "@supabase/ssr": "^0.8.0",
     "@supabase/supabase-js": "^2.93.3",
     "inngest": "^3.49.3",
+    "lucide-react": "^0.563.0",
     "marked": "^17.0.1",
     "next": "16.1.6",
     "react": "19.2.3",
