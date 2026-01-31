@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized AI Newsletter</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+        .header p {
+            margin: 10px 0 0;
+            opacity: 0.9;
+            font-size: 14px;
+        }
+        .summary-card {
+            margin: 20px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #667eea;
+            border-radius: 4px;
+        }
+        .summary-card h3 {
+            margin-top: 0;
+            color: #4a5568;
+            font-size: 18px;
+        }
+        .summary-item {
+            font-size: 14px;
+            margin: 5px 0;
+            color: #718096;
+        }
+        .summary-item strong {
+            color: #2d3748;
+        }
+        .content-area {
+            padding: 20px;
+            font-size: 16px;
+            color: #4a4a4a;
+        }
+        /* 假设 newsletter_content 中包含 h2 或 h4 */
+        .content-area h2 {
+            border-bottom: 2px solid #edf2f7;
+            padding-bottom: 10px;
+            color: #2d3748;
+        }
+        .footer {
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #a0aec0;
+            background-color: #fdfdfd;
+            border-top: 1px solid #f0f0f0;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Personalized AI Newsletter</h1>
+            <div>Your daily dose of curated news</div>
+        </div>
+
+        <div class="summary-card">
+            <h3>Newsletter Summary</h3>
+            <p class="summary-item"><strong>Categories:</strong> {{categories}}</p>
+            <p class="summary-item"><strong>Articles Analyzed:</strong> {{article_count}}</p>
+            <p class="summary-item"><strong>Generated on:</strong> {{current_date}}</p>
+        </div>
+
+        <div class="content-area">
+            {{{newsletter_content}}}
+        </div>
+
+        <div class="footer">
+            <p>This newsletter was generated just for you using AI technology.</p>
+            <p>Thank you for subscribing to our personalized newsletter service!</p>
+            <p>© 2026 AI News Lab. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
